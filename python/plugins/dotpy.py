@@ -6,11 +6,13 @@ import time
 import re
 import db
 import threading
+import os
 from .threads import ThreadPool
 
 print("当前路径 -> %s" %os.getcwd())
  
 current_path = os.path.dirname(__file__)
+current_path.replace('\\','/')
 
 
 class Source (object) :
@@ -20,7 +22,7 @@ class Source (object) :
         self.now = int(time.time() * 1000)
 
     def getSource (self) :
-        sourcePath = current_path+'/plugins/dotpy_source'
+        sourcePath = os.getcwd()+'/plugins/dotpy_source'
 		#sourcePath = '/srv/iptv/python/plugins/dotpy_source'
         with open(sourcePath, 'r',encoding='utf-8') as f:
             lines = f.readlines()
