@@ -3,7 +3,7 @@ ADD ./crontask /etc/cron.d/crontask
 WORKDIR /srv
 RUN pip install -U Flask \
     && apt-get update \
-    && apt-get install -y --no-install-recommends cron git wget \
+    && apt-get install -y --no-install-recommends --allow-unauthenticated cron git wget vim \
     && apt autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
