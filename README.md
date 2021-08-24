@@ -1,3 +1,4 @@
+本代码来自于evilcult，自己学习使用，若作者对这类使用有意见，随时联系删库
 # IPTV m3u 直播源 收集 & 汇总
 
  [项目详细说明](https://evilcult.dev/07/19/2019/IPTV-Projects/)
