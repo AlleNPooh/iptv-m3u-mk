@@ -22,7 +22,7 @@ class Source (object) :
         self.now = int(time.time() * 1000)
 
     def getSource (self) :
-        sourcePath = os.getcwd()+'python/plugins/dotpy_source'
+        sourcePath = os.getcwd()+'/python/plugins/dotpy_source'
 		#sourcePath = '/srv/iptv/python/plugins/dotpy_source'
         with open(sourcePath, 'r',encoding='utf-8') as f:
             lines = f.readlines()
